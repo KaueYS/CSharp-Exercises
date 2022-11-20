@@ -6,7 +6,9 @@ namespace CSharp_Exercises
     {
         static void Main(string[] args)
         {
-            string name = "Kaue";
+            Console.WriteLine("Digite seu nome: ");
+            string name = Console.ReadLine();
+            
             int message = 3;
             double tempC = 34.4;
             double tempF = 94;
@@ -14,9 +16,10 @@ namespace CSharp_Exercises
 
 
 
-            Console.WriteLine($"Olá, {name}!, Voce tem {message} mensagens na sua caixa de entrada. A temperatura é de {tempC}");
-
-            Console.WriteLine($"A temperatura é de {celsius.ToString("F2")} celsius");
+            Console.WriteLine($"Olá, {name}!, Voce tem {message} mensagens na sua caixa de entrada. " +
+                $"A temperatura para hoje é de {tempC} C");
+            
+            Console.WriteLine($"A conversão de 94 farenheit para celsius : {celsius.ToString("F2")} celsius");
         }
     }
 }
